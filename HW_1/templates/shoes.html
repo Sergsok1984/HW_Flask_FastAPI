@@ -1,0 +1,17 @@
+{% extends 'base_task_9.html' %}
+
+{% block content %}
+<span style="color:blue">Обувь</span>
+<table align="center">
+    <tr style="color:blue">
+        <td>Товар</td>
+        <td>Цена</td>
+    </tr>
+    {% for key, value in goods.items() %}
+    <tr>
+        <td>{{ key }}</td>
+        <td>{{ value }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Новости</title>
+</head>
+<body>
+    <h1>Последние новости</h1>
+    {% for news in news_list %}
+    <div class="news_block">
+        <h2>{{ news.title }}</h2>
+        <p>{{ news.description }}</p>
+        <p><em>{{ news.date }}</em></p>
+    </div>
+    {% endfor %}
+</body>
+</html>

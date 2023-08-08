@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<table align="center">
+    <tr>
+        <td><a href="/"><span style="color:red">Главная</span></a></td>
+        <td>  </td>
+        <td><a href="/clothes/"><span style="color:green">Одежда</span></a></td>
+        <td>  </td>
+        <td><a href="/shoes/"><span style="color:blue">Обувь</span></a></td>
+        <td>  </td>
+        <td><a href="/jackets/"><span style="color:brown">Куртки</span></a></td>
+    </tr>
+</table>
+<hr>
+
+<div id="p01">
+    {% block content %}
+    <p><span style="color:blue">Интернет-магазин "Одежда, обувь, куртки"</span></p>
+    <p><b>Главная страница</b></p>
+    {{ date_time }}
+    {% endblock %}
+</div>
+
+<div align="center">
+    <hr>
+    Все права защищены
+</div>
+
+</body>
+</html>
