@@ -1,0 +1,17 @@
+.columns_name {
+    color: brown;
+    font-weight: 200;
+    font-size: 100%;
+    text-align: left;
+    border: 2px solid grey
+}
+
+.table_style {
+   border-collapse: collapse;
+   border: 2px solid grey;
+}
+
+.cell {
+   border: 1px solid grey;
+   font-size: 100%;
+}
